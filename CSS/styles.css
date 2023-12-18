@@ -67,22 +67,22 @@ footer {
         margin: 0;
         padding: 0;
         display: none;
-        flex-direction: column; /* Cambiado a 'column' para que aparezca verticalmente */
+        flex-direction: column;
     }
 
     .menu ul.active {
         display: flex;
         position: absolute;
-        top: 100%; /* Muestra el menú debajo del icono */
+        top: 100%;
         left: 0;
-        background-color: #333; /* Color de fondo del menú desplegable */
+        background-color: #333;
         width: 100%;
     }
 
     .menu li {
         margin: 0;
         text-align: center;
-        box-sizing: border-box; /* Evita el doble padding */
+        box-sizing: border-box;
     }
 
     .menu a {
