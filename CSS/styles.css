@@ -41,7 +41,12 @@ a {
 
 section {
     padding: 20px;
+    background-image: url(../MEDIA/cartel_exterior.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen al tamaño de la sección manteniendo su relación de aspecto */
+    background-position: center center;
 }
+
 
 footer {
     background-color: #333;
@@ -54,6 +59,7 @@ footer {
 @media only screen and (max-width: 768px) {
     .menu {
         display: block;
+        position: relative;
     }
 
     .menu-icon {
@@ -66,14 +72,25 @@ footer {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        display: none;
+        display: none; /* Oculta la lista por defecto */
         flex-direction: column;
+        position: absolute;
+        top: 100%; /* Posiciona la lista en la parte inferior del ícono de menú */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    /* Estilo adicional para ocultar la lista cuando el menú no está activo */
+    .menu:not(.active) ul {
+        display: none;
     }
 
     .menu ul.active {
         display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 100%; /* Mantén top en 100% */
         left: 0;
         background-color: #333;
         width: 100%;
@@ -91,9 +108,8 @@ footer {
         display: block;
         padding: 10px;
     }
-
-    
 }
+
 
 /* Estilos para menu activo*/
 .menu ul {
