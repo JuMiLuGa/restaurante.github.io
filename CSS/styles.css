@@ -6,13 +6,28 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #cca435;
+    color: #000;
     padding: 15px;
     text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: -15px;
+    margin-left: -15px;
+    
 }
 
 .menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
     font-size: 24px;
     cursor: pointer;
     display: none;
@@ -36,12 +51,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 section {
     padding: 20px;
-    background-image: url(../MEDIA/cartel_exterior.png);
     background-repeat: no-repeat;
     background-size: cover; /* Ajusta la imagen al tamaño de la sección manteniendo su relación de aspecto */
     background-position: center center;
@@ -49,8 +63,8 @@ section {
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #cca435;
+    color: #000;
     text-align: center;
     padding: 10px;
 }
@@ -63,7 +77,7 @@ footer {
     }
 
     .menu-icon {
-        font-size: 24px;
+        font-size: 30px;
         cursor: pointer;
         display: block;
     }
@@ -77,7 +91,7 @@ footer {
         position: absolute;
         top: 100%; /* Posiciona la lista en la parte inferior del ícono de menú */
         left: 0;
-        background-color: #333;
+        background-color: #272318;
         width: 100%;
     }
 
@@ -92,7 +106,7 @@ footer {
         position: absolute;
         top: 100%; /* Mantén top en 100% */
         left: 0;
-        background-color: #333;
+        background-color: #b99531f6;
         width: 100%;
     }
 
@@ -104,7 +118,7 @@ footer {
 
     .menu a {
         text-decoration: none;
-        color: #fff;
+        color: #000;
         display: block;
         padding: 10px;
     }
@@ -125,12 +139,12 @@ footer {
 
 .menu a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .menu li.active {
-    background-color: #646464;
-    padding: 2pt;
+    background-color: #b99531f6;
+    padding: 8pt;
 }
 
 /* Agrega estilos para la clase 'active' */
